@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "myExtension",
+    "version": "1.0.0",
+    "description": "简单的自定义新标签页",
+    "icons": {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "page_action": {
+        "default_icon": "img/icon.png",
+        "default_title": "simple new tab"
+    },
+    "homepage_url": "https://linfuxiang.github.io/",
+    "chrome_url_overrides": {
+        "newtab": "newtab/newtab.html"
+    },
+    "permissions": ["declarativeContent", "storage"],
+    "incognito": "not_allowed"
+}
